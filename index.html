@@ -20,6 +20,15 @@
             font-size: 2rem;   /*부모사이즈의 2배*/
         }
 
+        .four {
+            width: 50%;
+            height: 100px;
+            background: red;
+        }
+
+        .six {
+            width: 500px;
+        }
     </style>
 
 </head>
@@ -39,5 +48,9 @@
             </div>
         </div>
     </div>
+    <div class="six">
+        <div class="four"></div>   <!--화면의 50%가 아님!! 부모의 50%니까 six의 50%-->
+    </div>
+    <div class="four"></div>   <!--화면의 50%가 아님!! 부모의 50%니까 body의 50%-->
 </body>
 </html>
