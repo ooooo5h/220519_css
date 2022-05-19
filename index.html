@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Page Title</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Loop:ital@1&display=swap" rel="stylesheet">
     <style>
-        h1 {
-            width: 200px;
-            border: 1px solid black;
-            padding: 20px;
-            box-sizing: border-box;  
-            font-family: 'Zen Loop', cursive;
+        @keyframes 애니 {
+            50% {
+                transform: translate(200px, 0);
+            }
+
+            100% {
+                transform: translate(200px, 200px);
+            }
         }
-       
+        div {
+            background: red;
+            width: 100px;
+            height: 100px;
+            animation: 애니 2s;
+        }
     </style>
 
 </head>
 <body>
-    <h1>hello world</h1>
+    <div>hello world</div>
 </body>
 </html>
