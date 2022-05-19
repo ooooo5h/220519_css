@@ -3,67 +3,17 @@
 <head>
     <title>Page Title</title>
     <style>
-        body {
-
+        h1 {
+            border: 1px solid black;
+            padding: 10px;   /*내부여백*/
+            margin: 100px;  /*외부여백*/
         }
-
-        .one {
-            font-size: 32px;
-            font-weight: 900;
-        }
-
-        .two {
-            font-size: 2em;    /*배수단위*/
-        }
-
-        .three {
-            font-size: 2rem;   /*부모사이즈의 2배*/
-        }
-
-        .four {
-            width: 50%;
-            height: 100px;
-            background: red;
-        }
-
-        .five {
-            width: 50vw;   /*화면 기준!*/
-            height : 100px;
-            background: aqua;
-        }
-
-        .six {
-            width: 500px;
-        }
+       
     </style>
 
 </head>
 <body>
-    <h1>hello world</h1>  
-    <div class="two">  
-        <div class="two">  
-            <div class="two"> 
-                hello world2    
-            </div>
-        </div>
-    </div>
-    <div class="two"> 
-        <div class="two">  
-            <div class="three">  <!--16px의 2배-->
-                hello world3   
-            </div>
-        </div>
-    </div>
-    <div class="six">
-        <div class="four"></div>   <!--화면의 50%가 아님!! 부모의 50%니까 six의 50%-->
-    </div>
-    <div class="four"></div>   <!--화면의 50%가 아님!! 부모의 50%니까 body의 50%-->
-    
-    <div class="five"></div>
-
-    <div class="six">
-        <div class="five"></div>   <!--어디에 있던지 화면의 절반을 나타내는 vw, vh-->
-    </div>
-
+    <h1>hello world</h1>
+    <h1>hello world2</h1>
 </body>
 </html>
