@@ -3,28 +3,29 @@
 <head>
     <style>
         @keyframes 애니 {
-            25% {
+
+            50% {
                 transform: translate(200px, 0);
             }
 
-            50% {
-                transform: translate(200px, 200px);
-            }
-
-            75% {
-                transform: translate(0px, 200px);
-            }
-
             100% {
-                transform: translate(0px, 0px);
+                transform: translate(200px, 200px);
             }
         }
         div {
             background: red;
             width: 100px;
             height: 100px;
-            animation: 애니 2s infinite;
+            animation: 애니 2s;
+            transition: all 1s;
         }
+
+        div:hover {
+            background: dodgerblue;
+            width: 200px;
+            height: 200px;
+        }
+
     </style>
 
 </head>
