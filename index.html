@@ -4,7 +4,7 @@
     <title>Page Title</title>
     <style>
         body {
-            
+
         }
 
         .one {
@@ -16,15 +16,26 @@
             font-size: 2em;    /*배수단위*/
         }
 
+        .three {
+            font-size: 2rem;   /*부모사이즈의 2배*/
+        }
+
     </style>
 
 </head>
 <body>
-    <h1>hello world</h1>  <!--16px이 기본!-->
-    <div class="two">  <!--32px-->
-        <div class="two">  <!--64px-->
-            <div class="two">  <!--128px-->
+    <h1>hello world</h1>  
+    <div class="two">  
+        <div class="two">  
+            <div class="two"> 
                 hello world2    
+            </div>
+        </div>
+    </div>
+    <div class="two"> 
+        <div class="two">  
+            <div class="three">  <!--16px의 2배-->
+                hello world3   
             </div>
         </div>
     </div>
