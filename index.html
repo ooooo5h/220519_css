@@ -3,19 +3,27 @@
 <head>
     <style>
         @keyframes 애니 {
-            50% {
+            25% {
                 transform: translate(200px, 0);
             }
 
-            100% {
+            50% {
                 transform: translate(200px, 200px);
+            }
+
+            75% {
+                transform: translate(0px, 200px);
+            }
+
+            100% {
+                transform: translate(0px, 0px);
             }
         }
         div {
             background: red;
             width: 100px;
             height: 100px;
-            animation: 애니 2s;
+            animation: 애니 2s infinite;
         }
     </style>
 
