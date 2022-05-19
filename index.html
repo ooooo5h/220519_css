@@ -3,9 +3,17 @@
 <head>
     <title>Page Title</title>
     <style>
+        body {
+            font-size: 10px;
+        }
+
         .one {
             font-size: 32px;
             font-weight: 900;
+        }
+
+        .two {
+            font-size: 2em;    /*배수단위*/
         }
 
     </style>
@@ -13,6 +21,12 @@
 </head>
 <body>
     <h1>hello world</h1>
-    <div class="one">hello world</div>
+    <div class="two">  <!--20px-->
+        <div class="two">  <!--40px-->
+            <div class="two">  <!--80px-->
+                hello world2    <!--body가 10px이니까 x2, x2, x2해서 80px-->
+            </div>
+        </div>
+    </div>
 </body>
 </html>
